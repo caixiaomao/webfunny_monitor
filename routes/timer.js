@@ -84,7 +84,7 @@ module.exports = (customerWarningCallback) => {
                 }
                 if (minuteTimeStr.substring(1) == "0:00") {
                     // 每隔10分钟，对一些实时数据进行计算
-                    Common.calculateCountByDayForTenMinutes(0)
+                    // Common.calculateCountByDayForTenMinutes(0)
                 }
                 if (minuteTimeStr.substring(3) == "00") {
                     // 每隔1分钟，取出全局变量global.monitorInfo.logCountInMinute的值，并清0
