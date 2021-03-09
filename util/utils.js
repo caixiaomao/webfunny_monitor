@@ -340,18 +340,17 @@ const Utils = {
   handleTimeSqlByTimeSize(param) {
     const timeSize = param.timeSize * 1
     const nowTime = new Date().getTime()
-    const startTime = nowTime - 24 * 3600 * 1000 - timeSize * 24 * 3600 * 1000
+    const startTime = nowTime - (timeSize + 1) * 24 * 3600 * 1000
     const endTime = nowTime - timeSize * 24 * 3600 * 1000
-    const startTimeDate = new Date(startTime).Format("yyyy-MM-dd") + " 00:00:00"
-    const endTimeDate = new Date(endTime).Format("yyyy-MM-dd") + " 00:00:00"
     let startHour = new Date(startTime).Format("MM-dd hh")
     let endHour = new Date(endTime).Format("MM-dd hh")
-    let timeSql = " and hourName>='" + startHour + "' and hourName<='" + endHour + "' "
     if (timeSize > 0) {
+      const startTimeDate = new Date(endTime).Format("yyyy-MM-dd") + " 00:00:00"
+      const endTimeDate = new Date(endTime).Format("yyyy-MM-dd") + " 23:59:59"
       startHour = new Date(startTimeDate).Format("MM-dd hh")
       endHour = new Date(endTimeDate).Format("MM-dd hh")
-      timeSql = " and hourName>='" + startHour + "' and hourName<'" + endHour + "' "
     }
+    let timeSql = " and hourName>='" + startHour + "' and hourName<='" + endHour + "' "
     return timeSql
   },
   /**
@@ -360,19 +359,17 @@ const Utils = {
   handleTimeSqlByTimeSizeSeven(param) {
     const timeSize = param.timeSize * 1
     const nowTime = new Date().getTime()
-    const startTime = nowTime - 2 * 24 * 3600 * 1000 - timeSize * 24 * 3600 * 1000
-    const endTime = startTime + (timeSize + 1) * 24 * 3600 * 1000
-
-    const startTimeDate = new Date(startTime).Format("yyyy-MM-dd") + " 00:00:00"
-    const endTimeDate = new Date(endTime - 24 * 3600 * 1000).Format("yyyy-MM-dd") + " 00:00:00"
+    const startTime = nowTime - (timeSize + 2) * 24 * 3600 * 1000
+    const endTime = nowTime - (timeSize + 1) * 24 * 3600 * 1000
     let startHour = new Date(startTime).Format("MM-dd hh")
     let endHour = new Date(endTime).Format("MM-dd hh")
-    let timeSql = " and hourName>='" + startHour + "' and hourName<='" + endHour + "' "
     if (timeSize > 0) {
+      const startTimeDate = new Date(endTime).Format("yyyy-MM-dd") + " 00:00:00"
+      const endTimeDate = new Date(endTime).Format("yyyy-MM-dd") + " 23:59:59"
       startHour = new Date(startTimeDate).Format("MM-dd hh")
       endHour = new Date(endTimeDate).Format("MM-dd hh")
-      timeSql = " and hourName>='" + startHour + "' and hourName<'" + endHour + "' "
     }
+    let timeSql = " and hourName>='" + startHour + "' and hourName<='" + endHour + "' "
     return timeSql
   },
 
