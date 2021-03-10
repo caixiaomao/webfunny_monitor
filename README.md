@@ -27,18 +27,9 @@
    
 
 ### 私有化部署方式
-
-   [【部署教程】](https://github.com/a597873885/webfunny_monitor/blob/master/DES.md)
    
    [【Docker部署】](https://github.com/a597873885/webfunny_monitor/blob/master/DES_DOCKER.md)
    
-### 联系作者微信
-
-   微信号：webfunny_2020
-
-   <img width=150 src="http://www.webfunny.cn/src/assets/img/wx_add.jpeg"/>
-
-部署教程：<a href="https://www.bilibili.com/video/bv1Xr4y1w7nd" target="_blank">本地安装教程视频</a>
 
 ### 基础环境
 
