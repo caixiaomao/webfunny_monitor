@@ -23,17 +23,18 @@
    [【Demo效果】](http://www.webfunny.cn/demo/home.html) | 
    [【更新日志】](http://www.webfunny.cn/update.html) |
    [【关于开源】](http://www.webfunny.cn/faq.html?tab=2)
- 
+ ### 联系作者微信
+
+   微信号：webfunny_2020
+
+   <img width=150 src="http://www.webfunny.cn/src/assets/img/wx_add.jpeg"/>
    
 
 ### 私有化部署方式
    
    [【Docker部署】](https://github.com/a597873885/webfunny_monitor/blob/master/DES_DOCKER.md)
    
-### 联系作者
-微信号：webfunny_2020
 
-   
 
 ### 基础环境
 
