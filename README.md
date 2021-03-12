@@ -30,6 +30,10 @@
    
    [【Docker部署】](https://github.com/a597873885/webfunny_monitor/blob/master/DES_DOCKER.md)
    
+### 联系作者
+微信号：webfunny_2020
+
+   
 
 ### 基础环境
 
